@@ -21,6 +21,7 @@ class Main extends Component {
   async componentDidMount(){
     const resp = await fetch('https://api.nytimes.com/svc/topstories/v2/science.json?api-key=3qEoryesYiMfPGEvxmbBgnbfpCD3wZwq');
     const data = await resp.json();
+    console.log(data);
     this.setState({
         newsList: data.results
     })
