@@ -6,7 +6,7 @@ class Card extends Component {
     
 console.log(multimedia);
 const img = multimedia===null? "" :multimedia[0].url;
-    return <div>
+    return <div className={"card"}>
       <p>{section}</p>
       <h3>{title}</h3>
       <p>{abstract}</p><br/>

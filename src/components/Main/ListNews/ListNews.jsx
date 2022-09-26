@@ -10,7 +10,7 @@ class ListNews extends Component {
     const newsList = this.props.data
     console.log(newsList);
 
-    return <div>
+    return <div className={"list-news"}>
       {newsList.map(news => 
         <Card data={news} key={uuidv4()}/>
         )

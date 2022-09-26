@@ -31,7 +31,7 @@ class Main extends Component {
 
 
   render() {
-    return <main>
+    return <main className={"main"}>
       <Routes>
           <Route element={<Home />} path={"/"} />
           <Route element={<Form />} path={"/form"} />

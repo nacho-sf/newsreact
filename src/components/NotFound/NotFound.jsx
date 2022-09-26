@@ -2,7 +2,9 @@ import React, { Component } from "react";
 
 class NotFound extends Component {
   render() {
-    return <div>NotFound</div>;
+    return <div className={"not-found"}>
+      NotFound
+    </div>;
   }
 }
 

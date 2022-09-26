@@ -4,7 +4,7 @@ import Nav from './Nav'
 
 class Header extends Component {
   render() {
-    return <header>
+    return <header className={"header"}>
       <Nav />
     </header>;
   }
