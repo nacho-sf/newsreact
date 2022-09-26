@@ -1,4 +1,4 @@
-### Estructura de componentes:
+## Estructura de componentes
 
 - Header
 
