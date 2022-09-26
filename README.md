@@ -1,5 +1,9 @@
 ### Estructura de componentes:
 
+- Header
+
+    - Nav
+
 - Main --fetch 5 noticias STATE + funcion AddNews
 
     - Home. Input + botón para introducir nombre de usuario
