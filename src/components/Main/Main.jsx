@@ -26,15 +26,28 @@ class Main extends Component {
         newsList: data.results
     })
     console.log('componentDidMount');
-}
+  }
 
+
+  addNews = (e) => {
+
+    e.preventDefault();
+    const title = e.target.title.value;
+    const abstract = e.target.abstract.value;
+    const image = e.target.image.value;
+    const url = e.target.url.value;
+
+    const newNewsList = {title,abstract,image,url};
+    this.setState({newsList:[newNewsList,...this.state.newsList]})
+    e.target.reset();
+  }
 
 
   render() {
     return <main className={"main"}>
       <Routes>
           <Route element={<Home />} path={"/"} />
-          <Route element={<Form />} path={"/form"} />
+          <Route element={<Form value={this.state.value} onFormSubmit={this.addNews} />} path={"/form"} />
           <Route element={<ListNews data={this.state.newsList} />} path={"/list"} />
           <Route element={<NotFound />} path={"/*"} />
         </Routes>

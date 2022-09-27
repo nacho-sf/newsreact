@@ -29,4 +29,14 @@
     justify-content: center;
     margin: 0 20px 0 20px;
     height: auto;
+
+}
+
+.link{
+    text-decoration: none;
+    color: rgb(81, 81, 81);
+
+    &:hover{
+        color: rgb(150, 150, 150);
+    }
 }
