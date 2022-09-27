@@ -11,7 +11,7 @@ class ListNews extends Component {
     console.log(newsList);
 
     return <div className={"list-news"}>
-      {newsList.map(news => 
+      {newsList.slice(2,7).map(news => 
         <Card data={news} key={uuidv4()}/>
         )
       }

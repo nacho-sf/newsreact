@@ -2,15 +2,18 @@ import React, { Component } from "react";
 
 class Card extends Component {
   render() {
-    const {section, title, abstract, multimedia} = this.props.data
+    const {title, abstract, multimedia} = this.props.data
     
 console.log(multimedia);
 const img = multimedia===null? "" :multimedia[0].url;
     return <div className={"card"}>
-      <p>{section}</p>
-      <h3>{title}</h3>
-      <p>{abstract}</p><br/>
-      <img src={img} alt={"hola"}/>
+      <figure className={"figure"}>
+        <img src={img} alt={"hola"}/>
+      </figure>
+      <section className={"content"}>
+        <h3>{title}</h3>
+        <p>{abstract}</p>
+      </section>
     </div>;
   }
 }

@@ -1,5 +1,32 @@
 @import '../utils/variables.scss';
 
 .card{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: white;
+    width: 80%;
+    height: auto;
+    margin: 20px 0 0 0;
+    border-radius: 4px;
+    border: solid 1px rgb(188, 188, 188);
     
+}
+
+.figure{
+    margin: 10px;
+
+    &>img{
+        width: 200px;
+        height: auto;
+        border-radius: 4px;
+    }
+    
+}
+
+.content{
+    display:flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+    height: auto;
 }

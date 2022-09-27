@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import '../utils/variables.scss';
+
 .App {
     text-align: center;
+    font-family: $font;
+    background-color: white;
+    min-height: 100vh;
+    color: rgb(81, 81, 81);
   }
   
   .App-header {
